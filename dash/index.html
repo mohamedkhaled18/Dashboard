@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/master.css">
+    <link rel="stylesheet" href="CSS/framework.css">
+    <!-- font google and font Awsesome -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/d98a5ba119.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
+    <title>Dashboard | 2</title>
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Elzero</h3>
+            <ul>
+                <li>
+                    <a class="active d-flex center fs-14 c-black rad-6 p-10" href="#index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex center fs-14 c-black rad-6 p-10" href="./settings/settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex center fs-14 c-black rad-6 p-10" href="./profile/profile.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex center fs-14 c-black rad-6 p-10" href="./projects/projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex center fs-14 c-black rad-6 p-10" href="./courses/courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex center fs-14 c-black rad-6 p-10" href="./friends/friends.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="content w-full over-hidden">
+            <!-- start head -->
+            <div class="head bg-white p-15 bet-flex">
+                <div class="search p-relative">
+                    <input class="p-10 bord-1-s-c rad-10" type="search" placeholder="type a keyword">
+                </div>
+                <div style="margin-left: 11px;" class="icons d-flex center">
+                    <span class="p-relative notify">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- end head -->
+            <h1 class="p-relative">Dashboard</h1>
+            <div class="wrapper d-grid gap-20">
+                <div class="welcome bg-white rad-10 txt-c-mobile block-mobile">
+                    <div class="intro p-20 bet-flex-2 bg-eee">
+                        <div>
+                            <h2 class="m-0">Welcome</h2>
+                            <p class="c-gray mt-5">Elzero</p>
+                        </div>
+                        <img class="hide"
+                            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/welcome.png" alt="">
+                    </div>
+                    <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/avatar.png"
+                        class="avatar" alt="">
+                    <div class="body p-relative txt-c d-flex p-20 mt-20 mb-20 block-mobile ">
+                        <div>Osama Elzero<span class="d-block c-gray fs-14 mt-10">Developer</span></div>
+                        <div>80<span class="d-block c-gray fs-14 mt-10">Projects</span></div>
+                        <div>200$<span class="d-block c-gray fs-14 mt-10">Earned</span></div>
+                    </div>
+                    <a href="#profile" class="visit  d-block rad-6 c-white">Profile</a>
+                </div>
+                <!-- start quick drat widget -->
+                <div class="quick draft bg-white p-20 rad-10 ">
+                    <h2 class="mt-0 mb-10">
+                        Quick draft
+                    </h2>
+                    <p class="mt-0 mb-20 fs-15 c-gray">Write a draft for your ideas </p>
+                    <form action="">
+                        <input type="text" class="d-block w-full rad-6 p-10 bg-eee bord-0" placeholder="title">
+                        <textarea class="d-block w-full bg-eee rad-6 bord-0 mt-20 p-15"
+                            placeholder="your thoughts"></textarea>
+                        <input type="submit" value="Save" class="save">
+                    </form>
+                </div>
+                <!-- end quick drat widget -->
+                <!-- start yearly targets -->
+                <div class="targets bg-white p-10">
+                    <h2 class="mt-0 mb-10">Yearly Targets</h2>
+                    <p class="c-gray mt-0 fs-15">Targets Of The Year</p>
+                    <div class="stats-targets p-15">
+                        <div class="money">
+                            <div class="icon"><span>$</span></div>
+                            <div class="percent">
+                                <span class="c-gray d-block mb-10 fs-14">Money</span>
+                                <span class="fw-bold d-block">$20.000</span>
+                                <div class="line one">
+                                    <span class="d-block w-full mt-10 p-relative"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects">
+                            <div class="icon two"><i class="fa-solid fa-code fa-lg c-orange"></i></div>
+                            <div class="percent">
+                                <span class="c-gray d-block fs-14 mb-10">Projects</span>
+                                <span class="fw-bold d-block">24</span>
+                                <div class="line two">
+                                    <span class="d-block w-full mt-10 p-relative"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team">
+                            <div class="icon three"><i class="fa-solid fa-user fa-lg c-green"></i></div>
+                            <div class="percent">
+                                <span class="c-gray d-block mb-10">Team</span>
+                                <span class="fw-bold d-block">12</span>
+                                <div class="line three">
+                                    <span class="d-block w-full mt-10 p-relative"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end yearly targets -->
+                <!-- start ticket statistics  -->
+                <div class="tick-stats bg-white p-20 rad-6">
+                    <h2 class="mt-0 mb-10">Tickets Statistics</h2>
+                    <p class="c-gray mt-0 fs-15">Everything About Support Tickets</p>
+                    <div class="info d-grid">
+                        <div class="total bord-1-s-c rad-10 txt-c p-15">
+                            <i class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"></i>
+                            <span class="d-block fw-bold">2500</span>
+                            <span class="d-block c-gray fs-14">Total</span>
+                        </div>
+
+                        <div class="pending bord-1-s-c rad-10 txt-c p-15">
+                            <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
+                            <span class="d-block fw-bold">500</span>
+                            <span class="d-block c-gray fs-14">Pending</span>
+                        </div>
+
+                        <div class="closed bord-1-s-c rad-10 txt-c p-15">
+                            <i class="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
+                            <span class="d-block fw-bold">1900</span>
+                            <span class="d-block c-gray fs-14">Closed</span>
+                        </div>
+
+                        <div class="deleted bord-1-s-c rad-10 txt-c p-15">
+                            <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
+                            <span class="d-block fw-bold">100</span>
+                            <span class="d-block c-gray fs-14">Deleted</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end ticket statistics  -->
+                <!-- start latest news -->
+                <div class="news bg-white rad-6 p-10">
+                    <h2 class="mt-0 mb-15">Latest News</h2>
+                    <div class="container">
+                        <div class="box">
+                            <div class="image"><img class="rad-6"
+                                    src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/news-01.png"
+                                    alt=""></div>
+                            <div class="text">
+                                <h4 class="mt-0 mb-5">Created SASS Section</h4>
+                                <p class="mt-5 c-gray fs-14">New SASS Examples & Tutorials</p>
+                            </div>
+                            <span class="time fs-14">3 Days Ago</span>
+                        </div>
+                        <div class="box">
+                            <div class="image"><img
+                                    src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/news-02.png"
+                                    alt=""></div>
+                            <div class="text">
+                                <h4 class="mt-0 mb-5">Changed The Design</h4>
+                                <p class="mt-5 c-gray fs-14">A Brand New Website Design</p>
+                            </div>
+                            <span class="time fs-14">5 Days Ago</span>
+                        </div>
+                        <div class="box">
+                            <div class="image"><img
+                                    src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/news-03.png"
+                                    alt=""></div>
+                            <div class="text">
+                                <h4 class="mt-0 mb-5">Team Increased</h4>
+                                <p class="mt-5 c-gray fs-14">3 Developers Joined The Team</p>
+                            </div>
+                            <span class="time fs-14">7 Days Ago</span>
+                        </div>
+                        <div class="box last">
+                            <div class="image"><img
+                                    src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/news-04.png"
+                                    alt=""></div>
+                            <div class="text">
+                                <h4 class="mt-0 mb-5">Added Payment Gateway</h4>
+                                <p class="mt-5 c-gray fs-14">Many New Payment Gateways Added</p>
+                            </div>
+                            <span class="time fs-14">9 Days Ago</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end latest news -->
+                <!-- start latest tasks -->
+                <div class="p-10 bg-white rad-6 tasks">
+                    <h2>Latest Tasks</h2>
+                    <div class="container">
+                        <div class="box">
+                            <div class="text">
+                                <p class="">Record One New Video</p>
+                                <p>Record Python Create Exe Project</p>
+                            </div>
+                            <div class="icon"><i class="fa-regular fa-trash-can delete"></i></div>
+                        </div>
+                        <div class="box">
+                            <div class="text">
+                                <p class="">Write Article</p>
+                                <p>Write Low Level vs High Level Languages</p>
+                            </div>
+                            <div class="icon"><i class="fa-regular fa-trash-can delete"></i></div>
+                        </div>
+                        <div class="box">
+                            <div class="text">
+                                <p class="">Finish Project</p>
+                                <p>Publish Academy Programming Project</p>
+                            </div>
+                            <div class="icon"><i class="fa-regular fa-trash-can delete"></i></div>
+                        </div>
+                        <div class="box del">
+                            <div class="text">
+                                <p class="del c-gray">Attend The Meeting</p>
+                                <p class="del c-white">Attend The Project Business Analysis Meeting</p>
+                            </div>
+                            <div class="icon"><i class=" c-gray fa-regular fa-trash-can delete"></i></div>
+                        </div>
+                        <div class="box">
+                            <div class="text">
+                                <p class="">Finish Lesson</p>
+                                <p>Finish Teaching Flex Box</p>
+                            </div>
+                            <div class="icon"><i class="fa-regular fa-trash-can delete"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end latest tasks -->
+                <!-- start top search items -->
+                <div class="rad-6 bg-white p-10 search-items">
+                    <h2 class="mt-0">Top Search Items</h2>
+                    <div class="box">
+                        <span class="c-gray">keyword</span>
+                        <span class="c-gray">Search Count</span>
+                    </div>
+                    <div class="box">
+                        <span>Programming</span>
+                        <span>220</span>
+                    </div>
+                    <div class="box">
+                        <span>JavaScript</span>
+                        <span>180 </span>
+                    </div>
+                    <div class="box">
+                        <span>PHP</span>
+                        <span>160</span>
+                    </div>
+                    <div class="box">
+                        <span>Code</span>
+                        <span>145</span>
+                    </div>
+                    <div class="box">
+                        <span>Design</span>
+                        <span>110</span>
+                    </div>
+                    <div class="box">
+                        <span>Logic</span>
+                        <span>95</span>
+                    </div>
+                </div>
+                <!-- end top search items -->
+                <!-- start latest updates -->
+                <div class="bg-white rad-6 p-10 upload">
+                    <h2>Latest Uploads</h2>
+                    <div class="box">
+                        <div class="content">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/pdf.svg" alt="">
+                            <p>My-file-pdf <br><span class="c-gray">Elzero</span></p>
+                        </div>
+                        <div class="storage">2.9 MB</div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/avi.svg" alt="">
+                            <p>My-file-pdf <br><span class="c-gray">Elzero</span></p>
+                        </div>
+                        <div class="storage">4.9 MB</div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/psd.svg" alt="">
+                            <p>My-file-pdf <br><span class="c-gray">Elzero</span></p>
+                        </div>
+                        <div class="storage">4.5 MB</div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/zip.svg" alt="">
+                            <p>My-file-pdf <br><span class="c-gray">Elzero</span></p>
+                        </div>
+                        <div class="storage">8.9 MB</div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/dll.svg" alt="">
+                            <p>My-file-pdf <br><span class="c-gray">Elzero</span></p>
+                        </div>
+                        <div class="storage">4.9 MB</div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/eps.svg" alt="">
+                            <p>My-file-pdf <br><span class="c-gray">Elzero</span></p>
+                        </div>
+                        <div class="storage">8.9 MB</div>
+                    </div>
+                </div>
+                <!-- end latest updates -->
+                <!-- start project progress -->
+                <div class="p-relative bg-white rad-6 p-10 progress">
+                    <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/project.png" alt="">
+                    <h2 class="mt-0">Last Project Progress</h2>
+                    <ul>
+                        <li class="p-relative one">Got The Project</li>
+                        <li class="p-relative two">Started The Project</li>
+                        <li class="p-relative three">The Project About To Finish</li>
+                        <li class="p-relative four last">Test The Project</li>
+                        <li class="p-relative five last">Finish The Project & Get Money</li>
+                    </ul>
+                </div>
+                <!-- end project progress -->
+                <!-- start reminders -->
+                <div class="bg-white p-10 rad-6 reminder">
+                    <h2 class="mt-0">Reminders</h2>
+                    <ul>
+                        <li class="blue fw-bold fs-14 p-relative">Check My Tasks List<br><span
+                                class="c-gray fs-14">28/09/2022 - 12:00am</span></li>
+                        <li class="green fw-bold fs-14 p-relative">Check My Projects<br><span
+                                class="c-gray fs-14">26/10/2022 - 12:00am</span></li>
+                        <li class="orange fw-bold fs-14 p-relative">Check My Clients<br><span
+                                class="c-gray fs-14">05/11/2022 - 12:00am</span></li>
+                        <li class="red fw-bold fs-14 p-relative">Finish The Development Workshop<br><span
+                                class="c-gray fs-14">20/12/2022 - 12:00am</span></li>
+                    </ul>
+                </div>
+                <!-- end reminders -->
+                <!-- start latest post -->
+                <div class="post bg-white rad-6">
+                    <h2 class="mt-0">Latest Post</h2>
+                    <div class="info">
+                        <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/avatar.png" alt="">
+                        <h3 class="fs-15">Osama Elzero<br><span class="fs-12 c-gray">About 3 Hours Ago</span></h3>
+                    </div>
+                    <p class="lh-17">You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The
+                        Time, But You Can't Fool All Of The People All Of The Time.</p>
+                    <div class="likes">
+                        <div>
+                            <i class="fs-15 c-gray fa-regular fa-heart"></i>
+                            <span class="fs-15 c-gray">1.8k</span>
+                        </div>
+                        <div>
+                            <i class="fs-15 c-gray fa-regular fa-comments"></i>
+                            <span class="fs-15 c-gray">500</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end latest post -->
+                <!-- start social media stats -->
+                <div class="p-10 bg-white rad-6 social-media-stats">
+                    <h2 class="mt-0">Scoial Media Statistics</h2>
+                    <div class="box twit">
+                        <div class="icon">
+                            <i class="fa-brands fa-twitter fa-2x c-white h-full center-flex"></i>
+                        </div>
+                        <div class="content">
+                            <span>90K Followers</span>
+                            <span>Follow</span>
+                        </div>
+                    </div>
+                    <div class="box face">
+                        <div class="icon"> <i class="fa-brands fa-facebook-f fa-2x c-white h-full center-flex"></i>
+                        </div>
+                        <div class="content">
+                            <span>2M Like</span>
+                            <span>like</span>
+                        </div>
+                    </div>
+                    <div class="box y-t">
+                        <div class="icon"> <i class="fa-brands fa-youtube fa-2x c-white h-full center-flex"></i></div>
+                        <div class="content">
+                            <span>1M Subs</span>
+                            <span>Subscribe</span>
+                        </div>
+                    </div>
+                    <div class="box in">
+                        <div class="icon"> <i class="fa-brands fa-linkedin fa-2x c-white h-full center-flex"></i></div>
+                        <div class="content">
+                            <span>70K Followers</span>
+                            <span>Follow</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end social media stats -->
+            </div>
+            <!-- start projects -->
+            <div class=" bg-white rad-6 project m-20">
+                <h2 class="ml-30">Projects</h2>
+                <table>
+                    <thead>
+                        <tr>
+                        <td>Name</td>
+                        <td>Finish Date</td>
+                        <td>Client</td>
+                        <td>Price</td>
+                        <td>Team</td>
+                        <td>Status</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Ministry Wikipedia</td>
+                        <td>10 May 2022</td>
+                        <td>Ministry</td>
+                        <td>$5300</td>
+                        <td>
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-01.png" alt="">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-02.png" alt="">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-03.png" alt="">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-04.png" alt="">
+                        </td>
+                        <td><span class="one">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                        <td>Elzero Shop</td>
+                        <td>12 Oct 2021</td>
+                        <td>Elzero Company</td>
+                        <td>$1500</td>
+                        <td>
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-01.png" alt="">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-02.png" alt="">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-03.png" alt="">
+                        </td>
+                            <td><span class="two">In Progress</span></td>
+                        </tr>
+
+                        <tr>
+                        <td>Bouba App</td>
+                        <td>05 Sep 2021</td>
+                        <td>Bouba</td>
+                        <td>$800</td>
+                        <td>
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-01.png" alt="">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-02.png" alt="">
+                        </td>               
+                        <td><span class="three">Completed</span></td>
+                        </tr>
+
+                        <tr>
+                        <td>Mahmoud Website</td>
+                        <td>22 May 2021</td>
+                        <td>Mahmoud</td>
+                        <td>$600</td>
+                        <td>
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-01.png" alt="">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-02.png" alt="">
+                        </td>  
+                            <td><span class="four">Completed</span></td>
+                        </tr>
+                        <tr>
+                        <td>Sayed Website</td>
+                        <td>24 May 2021</td>
+                        <td>Sayed</td>
+                        <td>$300</td>
+                        <td>
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-01.png" alt="">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-02.png" alt="">
+                        </td>  
+                            <td><span class="five">Rejected</span></td>
+                        </tr>
+
+                        <tr>
+                        <td>Arena Application</td>
+                        <td>01 Mar 2022</td>
+                        <td>Arena Company</td>
+                        <td>$2600</td>
+                        <td>
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-01.png" alt="">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-02.png" alt="">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-03.png" alt="">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/team-04.png" alt="">
+                        </td>
+                            <td><span class="six">Completed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end projects -->
+        </div>
+    </div>
+
+</body>
+
+</html>

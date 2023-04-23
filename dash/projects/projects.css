@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;   
+}
+input[type="checkbox"] {
+    display: none;
+}
+:root {
+    --main-transition--:0.3s;
+    --font-awesome--:"Font Awesome 5 Free";
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --gray-color: #888;
+}
+textarea {
+    height: 150px;
+}
+input[type="submit"] {
+    color: white;
+    border: 0;
+    background: var(--blue-alt-color);
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+body {
+    font-family: "Open Sans" , sans-serif;
+    margin: 0;
+    background: #f1f5f9;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--blue-alt-color);
+}
+*:focus {
+    outline: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.page{
+    min-height: 100vh;
+} 
+h1 {
+    margin: 20px 20px 40px;
+    display: inline-block;
+}
+h1:hover::after {
+    width: 100%;
+}
+h1::before {
+    content: "";
+    position: absolute;
+    background:white;
+    width: 70%;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    border-radius: 5px;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    background-color: black;
+    width: 30%;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    transition: var(--main-transition--);
+}
+/* start sidebar */
+.page .sidebar {
+    width: 250px;
+    box-shadow: 0 0 10px #ddd;
+}
+.sidebar > h3  {
+    margin-bottom: 50px;
+    position: relative;
+}
+.sidebar > h3::before{
+    content: "";
+    position: absolute;
+    background: black;
+    width: 80px;
+    height: 2px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sidebar > h3::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    outline: 3px white solid;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+} 
+.sidebar ul li a {
+    transition: var(--main-transition--);
+    margin-bottom: 5px;
+}
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #f6f6f6;
+}
+.sidebar ul li span {
+    font-size: 14px;
+    margin-left: 10px;
+}
+@media (max-width:767px) {
+    .page .sidebar {
+        width: 58px;
+        padding: 10px;
+    }
+    .page .sidebar > h3 {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .page .sidebar > h3::before,
+    .page .sidebar > h3::after {
+        display: none;
+    }
+    .page .sidebar ul li a span {
+        display: none;
+    }
+}
+/* end sidebar */
+/* start content */
+.head .search::before {
+    font-family: var(--font-awesome--);
+    font-weight: 900;
+    content: "\f002";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translatey(-50%);
+    font-size: 14px;
+    color:var(--gray-color) ;
+}
+.search input[type="search"] {
+    margin-left: 10px;
+    padding-left: 30px;
+    width: 160px;
+    transition: var(--main-transition--);
+}
+.search input[type="search"]:focus{
+    outline: #ddd 1px solid;
+    width: 200px;
+}
+.search input[type="search"]:focus::placeholder {
+    opacity: 0;
+}
+.search input[type="search"]::placeholder {
+    text-transform: capitalize;
+}
+.head .icons .notify::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--red-color);
+    border-radius: 50%;
+    right: -5px;
+    top: -5px;
+}
+.head .icons img {
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+}
+/* end content */
+.wrapper {
+    grid-template-columns:repeat(2 , 49%);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@media (max-width:992px) {
+    .wrapper {
+        grid-template-columns:100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        grid-gap: 10px;
+    } 
+}
+/* Start Box One */
+.box::before {
+    content: "15/10/2021";
+    position: absolute;
+    color: var(--gray-color);
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+}
+.box .images {
+    padding: 15px 0 15px 25px;
+}
+.box .images img{
+    width: 32px;
+    border-radius: 50%;
+    margin-left: -15px;
+    border: 1px solid white;
+}
+.box .first-section {
+    text-align: right;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box .first-section span {
+    background-color: #ddd;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 6px;
+    margin: 5px;
+}
+.box .last-section {
+  padding-top: 20px;
+}
+.box .last-section .progress {
+    width: 50%;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+.box .last-section .progress::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--red-color);
+    border-radius: 6px;
+}
+
+/* End Box One */
+/* Start BOX Two */
+.box:nth-child(2) .last-section .progress {
+    width: 50%;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+.box:nth-child(2) .last-section .progress::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background-color: var(--blue-alt-color);
+    border-radius: 6px;
+}
+/* End BOX Two*/
+/* Start BOX three */
+.box:nth-child(3) .last-section .progress {
+    width: 50%;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+.box:nth-child(3) .last-section .progress::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90%;
+    height: 100%;
+    background-color:var(--green-color);
+    border-radius: 6px;
+}
+/* End BOX Three*/
+/* Start Box Four */
+.box:nth-child(4) .last-section .progress {
+    width: 50%;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+.box:nth-child(4) .last-section .progress::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background-color: var(--blue-color);
+    border-radius: 6px;
+}
+/* End Box Four */

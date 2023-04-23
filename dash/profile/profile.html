@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="../CSS/framework.css">
+    <!-- font google and font Awsesome -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/d98a5ba119.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Elzero</h3>
+            <ul>
+                <li>
+                    <a class="d-flex center fs-14 c-black rad-6 p-10" href="../index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex center fs-14 c-black rad-6 p-10" href="../settings/settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active d-flex center fs-14 c-black rad-6 p-10" href="./profile.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex center fs-14 c-black rad-6 p-10" href="../projects/projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex center fs-14 c-black rad-6 p-10" href="../courses/courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex center fs-14 c-black rad-6 p-10" href="../friends/friends.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full over-hidden">
+            <!-- start head -->
+            <div class="head bg-white p-15 bet-flex">
+                <div class="search p-relative">
+                    <input class="p-10 bord-1-s-c rad-10" type="search" placeholder="type a keyword">
+                </div>
+                <div style="margin-left: 11px;" class="icons d-flex center">
+                    <span class="p-relative notify">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- end head -->
+            <h1 class="p-relative">Profile</h1>
+            <div class="wrapper d-grid gap-20">
+                <!-- Start ID -->
+                <div class="id w-full bg-white rad-6 p-10">
+                    <div class="left">
+                        <div class="image">
+                            <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/avatar.png"
+                                alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="mb-10">Osama Elzero</h3>
+                            <span class="c-gray">Level 20</span>
+                            <div class="p-relative line"></div>
+                            <div class=" stars">
+                                <i class="fa-solid fa-star c-orange fs-13"></i>
+                                <i class="fa-solid fa-star c-orange fs-13"></i>
+                                <i class="fa-solid fa-star c-orange fs-13"></i>
+                                <i class="fa-solid fa-star c-orange fs-13"></i>
+                                <i class="fa-solid fa-star c-orange fs-13"></i>
+                            </div>
+                            <span class=" c-gray rate">550 Rating</span>
+                        </div>
+                    </div>
+                    <!-- Start Right -->
+                    <div class="right">
+                        <div class="p-15 box bord-b-d">
+                            <h2 class="c-blue">General Information</h2>
+                            <div class="ali-cen container">
+                                <p><span class="c-gray">Full Name:</span> Osama Mohamed</p>
+                                <p><span class="c-gray">Gender:</span> Male</p>
+                                <p><span class="c-gray">Country:</span> Egypt</p>
+                                <input type="checkbox" id="one">
+                                <label for="one"></label>
+                            </div>
+                        </div>
+                        <div class="p-15 box bord-b-d">
+                            <h2 class="c-blue">Personal Information</h2>
+                            <div class="ali-cen container">
+                                <p><span class="c-gray">Email:</span> o@nn.sa</p>
+                                <p><span class="c-gray">Phone:</span> 019123456789</p>
+                                <p><span class="c-gray">Date Of Birth:</span> 25/10/1982</p>
+                                <input type="checkbox" id="two">
+                                <label for="two"></label>
+                            </div>
+                        </div>
+                        <div class="p-15 box bord-b-d">
+                            <h2 class="c-blue">Job Information</h2>
+                            <div class="ali-cen container">
+                                <p><span class="c-gray">Title:</span> Full Stack Developer</p>
+                                <p><span class="c-gray">Programming Language:</span> Python</p>
+                                <p><span class="c-gray">Years Of Experience:</span> 15+</p>
+                                <input type="checkbox" id="three">
+                                <label for="three"></label>
+                            </div>
+                        </div>
+                        <div class="p-15 box">
+                            <h2 class="c-blue">Billing Information</h2>
+                            <div class="ali-cen container">
+                                <p><span class="c-gray">Payment Method:</span> Paypal</p>
+                                <p><span class="c-gray">Email:</span> email@website.com</p>
+                                <p><span class="c-gray">Subscription:</span> Monthly</p>
+                                <input type="checkbox" id="four">
+                                <label for="four"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Right -->
+                </div>
+                <!-- End ID -->
+                <!-- Start Skills -->
+                <div class="skills bg-white rad-6 p-10">
+                    <h2 class="mt-0 mb-5">My Skills</h2>
+                    <p class="c-gray mt-0">Complete Skills List</p>
+                    <div class=" d-flex box">
+                        <span>Html</span>
+                        <span>Pugjs</span>
+                        <span>Haml</span>
+                    </div>
+                    <div class=" d-flex box">
+                        <span>CSS</span>
+                        <span>SASS</span>
+                        <span>Stylus</span>
+                    </div>
+                    <div class=" d-flex box">
+                        <span>JavaScribt</span>
+                        <span>TypeScribt</span>
+                    </div>
+                    <div class=" d-flex box">
+                        <span>Vuejs</span>
+                        <span>Reactjs</span>
+                    </div>
+                    <div class=" d-flex box">
+                        <span>Jest</span>
+                        <span>Jasmine</span>
+                    </div>
+                    <div class=" d-flex box">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                    </div>
+                    <div class=" d-flex box">
+                        <span>Python</span>
+                        <span>Django</span>
+                    </div>
+                </div>
+                <!-- End Skills -->
+                <!-- Start Latest Activity -->
+                <div class="latest-activ bg-white rad-6 p-15">
+                    <h2 class="mt-0 mb-5">Latest Activities</h2>
+                    <p class="c-gray mt-0 mb-5">Latest Activities Done By The User</p>
+                    <div class="d-flex box ali-cen">
+                        <div class="icon-info ali-cen">
+                            <img style="width:64px;" src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/activity-01.png" alt="">
+                            <p>Store<br><span class="c-gray">Bought The Mastering Python Course</span></p>
+                        </div>
+                        <div class="txt-c time">
+                            <span>18:10</span>
+                            <span class="c-gray">Yesterday</span>
+                        </div>
+                    </div>
+                    <div class="d-flex box ali-cen">
+                        <div class="icon-info ali-cen">
+                            <img style="width:64px;" src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/activity-02.png" alt="">
+                            <p>Store<br><span class="c-gray">Bought The Mastering Python Course</span></p>
+                        </div>
+                        <div class="txt-c time">
+                            <span>18:10</span>
+                            <span class="c-gray">Yesterday</span>
+                        </div>
+                    </div>
+                    <div class="d-flex box ali-cen">
+                        <div class="icon-info ali-cen">
+                            <img style="width:64px;" src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/activity-03.png" alt="">
+                            <p>Store<br><span class="c-gray">Bought The Mastering Python Course</span></p>
+                        </div>
+                        <div class="txt-c time">
+                            <span>18:10</span>
+                            <span class="c-gray">Yesterday</span>
+                        </div>
+                    </div>
+                    <div class="d-flex box ali-cen">
+                        <div class="icon-info ali-cen">
+                            <img style="width:64px;" src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/activity-01.png" alt="">
+                            <p>Store<br><span class="c-gray">Bought The Mastering Python Course</span></p>
+                        </div>
+                        <div class="txt-c time">
+                            <span>18:10</span>
+                            <span class="c-gray">Yesterday</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Latest Activity -->
+            </div>
+        </div>
+
+</body>
+
+</html>
